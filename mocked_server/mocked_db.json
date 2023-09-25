@@ -11,7 +11,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/2.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/3.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 3,
@@ -37,7 +37,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/1.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 4,
@@ -50,7 +50,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/4.jpg",
-      "isRead": true
+      "isRead": false
     }
   ],
   "latest-news": [
@@ -65,7 +65,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/1.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 6,
@@ -91,7 +91,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/3.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 8,
@@ -104,7 +104,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/4.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 9,
@@ -117,7 +117,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/1.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 10,
@@ -130,7 +130,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/2.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 11,
@@ -143,7 +143,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/3.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 12,
@@ -156,7 +156,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/4.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 13,
@@ -169,7 +169,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/1.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 14,
@@ -195,7 +195,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/3.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 16,
@@ -208,7 +208,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/4.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 17,
@@ -221,7 +221,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/1.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 18,
@@ -234,7 +234,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/2.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 19,
@@ -247,7 +247,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/3.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 20,
@@ -260,7 +260,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/4.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 21,
@@ -273,7 +273,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/1.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 22,
@@ -286,7 +286,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/3.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 23,
@@ -299,7 +299,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/4.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 24,
@@ -312,7 +312,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/1.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 25,
@@ -325,7 +325,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/2.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 26,
@@ -338,7 +338,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/3.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 27,
@@ -351,7 +351,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/4.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 28,
@@ -364,7 +364,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/1.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 29,
@@ -377,7 +377,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/2.jpg",
-      "isRead": true
+      "isRead": false
     },
     {
       "id": 30,
@@ -390,7 +390,7 @@
       ],
       "createdAt": "2023-09-20T17:28:59.000Z",
       "imageUrl": "http://localhost:4000/3.jpg",
-      "isRead": true
+      "isRead": false
     }
   ]
 }
