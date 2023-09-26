@@ -79,7 +79,7 @@ class ApiService implements NewsApiService {
       };
       final resp = await _requestList<News>(ApiEndpoints.latestNews, queryParams: queryParams);
 
-      return await handleOptimisticNews(resp);
+      return await handleOptimisticNews(resp, true);
     } on DioException catch (e) {
       throw e.message.toString();
     } catch (e) {
@@ -91,7 +91,7 @@ class ApiService implements NewsApiService {
   Future<List<News>> getAllFeatured() async {
     try {
       final resp = await _requestList<News>(ApiEndpoints.featuredNews);
-      return await handleOptimisticNews(resp);
+      return await handleOptimisticNews(resp, false);
     } on DioException catch (e) {
       throw e.message.toString();
     } catch (e) {
@@ -158,7 +158,7 @@ class ApiService implements NewsApiService {
     }
   }
 
-  Future<List<News>> handleOptimisticNews(List<News> news) async {
+  Future<List<News>> handleOptimisticNews(List<News> news, bool isLatest) async {
     final isOptimisticMarkedAllRead = await _storageRepository.isOptimisticMarkedAllRead;
     final ids = await _storageRepository.readOptimisticMarkedReadIds() ?? [];
 
@@ -166,7 +166,7 @@ class ApiService implements NewsApiService {
       markAllRead();
       return news.map((e) => e.rebuild((e) => e..isRead = true)).toList();
     } else if (ids.isNotEmpty) {
-      markMultipleRead(ids, false);
+      markMultipleRead(ids, isLatest);
       return news.map((e) => ids.contains(e.id.toString()) ? e.rebuild((e) => e..isRead = true) : e).toList();
     }
     return news;

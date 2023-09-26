@@ -69,7 +69,7 @@ class OptimisticMultipleStorage implements StorageList {
 
   @override
   Future<bool> compareValue(StorageKey lhsKey, List<String> rhsValue) async {
-    throw UnimplementedError();
+    return rhsValue == await read(lhsKey);
   }
 
   @override
