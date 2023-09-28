@@ -21,7 +21,7 @@ abstract class StorageList extends Storage<List<String>> {
   Future<bool> hasOne(StorageKey key, String value);
 }
 
-class OptimisticSingleStorage implements Storage<bool> {
+class PrefStorageSingle implements Storage<bool> {
   SharedPreferences? _prefs;
 
   Future<SharedPreferences> get _initedPrefs async => _prefs ??= await SharedPreferences.getInstance();
@@ -62,7 +62,7 @@ class OptimisticSingleStorage implements Storage<bool> {
   }
 }
 
-class OptimisticMultipleStorage implements StorageList {
+class PrefStorageList implements StorageList {
   SharedPreferences? _prefs;
 
   Future<SharedPreferences> get _initedPrefs async => _prefs ??= await SharedPreferences.getInstance();
@@ -123,7 +123,9 @@ class OptimisticMultipleStorage implements StorageList {
   @override
   Future writeOne(StorageKey key, String value) async {
     final list = await read(key) ?? [];
-    list.add(value);
-    await write(key, list);
+    if (!list.contains(value)) {
+      list.add(value);
+      await write(key, list);
+    }
   }
 }

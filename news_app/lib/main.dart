@@ -8,7 +8,7 @@ import "app.dart";
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  final storageRepository = StorageRepository(OptimisticSingleStorage(), OptimisticMultipleStorage());
+  final storageRepository = StorageRepository(PrefStorageSingle(), PrefStorageList());
   final apiService = ApiService(storageRepository);
   runApp(TestApp(
     newsRepository: NewsRepository(apiService),

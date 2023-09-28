@@ -50,4 +50,6 @@ class NewsState {
         hasReachedMaxLatest: hasReachedMaxLatest ?? this.hasReachedMaxLatest,
         latestPage: latestPage ?? this.latestPage,
       );
+
+    bool get newsLoaded  => latestNewsStatus == FetchStatus.success && featuredNewsStatus == FetchStatus.success;
 }

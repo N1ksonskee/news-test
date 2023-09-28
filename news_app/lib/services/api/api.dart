@@ -132,9 +132,7 @@ class ApiService implements NewsApiService {
   Future markOneRead(int id, bool isLatest) async {
     try {
       final idStr = id.toString();
-      if (!await _storageRepository.hasOptimisticMarkedReadId(idStr)) {
-        await _storageRepository.setOptimisticMarkedReadId(idStr);
-      }
+      await _storageRepository.setOptimisticMarkedReadId(idStr);
 
       await _request(
         "${isLatest ? ApiEndpoints.latestNews : ApiEndpoints.featuredNews}/$idStr",
@@ -142,9 +140,7 @@ class ApiService implements NewsApiService {
         data: {"isRead": true},
       );
 
-      if (await _storageRepository.hasOptimisticMarkedReadId(idStr)) {
-        await _storageRepository.deleteOptimisticMarkedReadId(idStr);
-      }
+      await _storageRepository.deleteOptimisticMarkedReadId(idStr);
     } on DioException catch (e) {
       throw e.message.toString();
     } catch (e) {
